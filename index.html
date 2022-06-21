@@ -14,12 +14,37 @@
 </head>
 <body>
 
+    <div class="container mt-3 mb-3">
+        <h1 class="h1">JcsnP Photography</h1>
+        <p class="text-muted">อยากถ่ายไรก็ถ่าย</p>
+        <label>เลือก Filter</label>
+        <select name="filter" id="filter" class="form-select" onchange="applyFilter()">
+            <option value="default">default</option>
+            <option value="contrast">contrast</option>
+            <option value="grayscale">grayscale</option>
+            <option value="sepia">sepia</option>
+            <option value="saturate">saturate</option>
+        </select>
+    </div>
+
     <div class="container">
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-column flex-sm-row">
             <div class="d-flex flex-column">
                 <div class="img-container">
-                    <img src="./images/hanging-lamp.JPG" class="img-fluid" alt="">
+                    <img src="./images/hanging-lamp.JPG" class="img-fluid" id="test" alt="">
                     <div class="img-location">8.391482, 99.861791</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/jungle-1.jpg" class="img-fluid" alt="">
+                    <div class="img-location">SECRET</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/flower-1.jpg" class="img-fluid" alt="">
+                    <div class="img-location">SECRET</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/water-rock.jpg" class="img-fluid" alt="">
+                    <div class="img-location">8.559545, 99.780500</div>
                 </div>
             </div>
             <div class="f-flex flex-column">
@@ -27,22 +52,59 @@
                     <img src="./images/field-1.JPG" class="img-fluid" alt="">
                     <div class="img-location">8.384772, 99.816517</div>
                 </div>
+                <div class="img-container">
+                    <img src="./images/building-1.JPG" class="img-fluid" alt="">
+                    <div class="img-location">8.652774, 99.916072</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/temple-1.JPG" class="img-fluid" alt="">
+                    <div class="img-location">8.401212, 99.811357</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/chicken.jpg" class="img-fluid" alt="">
+                    <div class="img-location">8.468520, 99.478278</div>
+                </div>
             </div>
             <div class="d-flex flex-column">
                 <div class="img-container">
-                    <img src="./images/hanging-lamp.JPG" class="img-fluid" alt="">
-                    <div class="img-location">8.391482, 99.861791</div>
+                    <img src="./images/pole.jpg" class="img-fluid" alt="">
+                    <div class="img-location">SECRET</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/sattelite-dish.jpg" class="img-fluid" alt="">
+                    <div class="img-location">SECRET</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/sea-1.jpg" class="img-fluid" alt="">
+                    <div class="img-location">9.124394, 99.883644</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/landscape-1.jpg" class="img-fluid" alt="">
+                    <div class="img-location">8.468520, 99.478278</div>
                 </div>
             </div>
             <div class="f-flex flex-column">
                 <div class="img-container">
-                    <img src="./images/field-1.JPG" class="img-fluid" alt="">
-                    <div class="img-location">8.384772, 99.816517</div>
+                    <img src="./images/mountain-1.jpg" class="img-fluid" alt="">
+                    <div class="img-location">8.386473, 99.816821</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/trees-1.jpg" class="img-fluid" alt="">
+                    <div class="img-location">SECRET</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/moon-1.jpg" class="img-fluid" alt="">
+                    <div class="img-location">SECRET</div>
+                </div>
+                <div class="img-container">
+                    <img src="./images/mountain-2.jpg" class="img-fluid" alt="">
+                    <div class="img-location">8.410100, 99.795014</div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="./js/semantic.min.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
 </html>

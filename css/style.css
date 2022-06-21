@@ -8,15 +8,31 @@ body {
     position: relative;
 }
 
+.img-container img {
+    cursor: pointer;
+}
+
 .col-12 {
     margin-bottom: 15px;
 }
 
+/*
 .flex-column {
-    flex: 25% !important;
-    max-width: 25% !important;
+    flex: 25%;
+    max-width: 25% ;
+}
+*/
+
+.img-location {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    color: #FFF;
+    background-color: rgba(66, 63, 63, 0.484);
+    
 }
 
+/*
 .img-location {
     position: absolute;
     bottom: 10px;
@@ -24,3 +40,4 @@ body {
     color: #FFF;
     text-shadow: 1px 1px #000;
 }
+*/
